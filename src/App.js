@@ -6,6 +6,7 @@ import Employee from "./components/Employee";
 import getData from "./components/GetData";
 import { APIContext, DataContext } from "./FetchDataContext";
 import DataContainer from "./components/DataContainer";
+import Timer from "./components/Timer";
 
 const iniEmployees = [
   {id: 1, name: "alex", salary: 5000},
@@ -19,6 +20,7 @@ function App() {
   //const getData2 = useContext(APIContext)
   return (
     <div className="App">
+      <Timer></Timer>
       <ul>
       {employees.map((employee) => {
         return (
